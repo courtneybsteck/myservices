@@ -1,414 +1,433 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Courtney Steck</title>
-  
- <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courtney Steck</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        body {
-            font-family: 'Raleway', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #ffeee8;
-        }
+    body {
+      font-family: 'Raleway', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #ffeee8;
+    }
 
-    h1, h2, h3 {
-            font-family: 'Crimson Text', serif;
-        }
+    a {
+      color: #333;
+      text-decoration: underline;
+    }
+
+    a:visited {
+      color: #333;
+    }
+
+    a:hover {
+      color: #897c78;
+    }
     
-    
-        /* Header/Navigation */
-        header {
-            background-color: #e5cfc8;
-            padding: 1.5rem 0;
-            border-bottom: 1px solid #e5e5e5;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
+    h1,
+    h2,
+    h3 {
+      font-family: 'Crimson Text', serif;
+    }
 
-        .header-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    /* Header/Navigation */
+    header {
+      background-color: #e5cfc8;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid #e5e5e5;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
 
-        .logo {
-          font-family: 'Crimson Text', serif;  
-          font-size: 1.8rem;
-            font-weight: 600;
-            color: #333;
-        }
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 2rem;
-        }
+    .logo {
+      font-family: 'Crimson Text', serif;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #333;
+    }
 
-        nav a {
-            text-decoration: none;
-            color: #333;
-            font-size: 0.95rem;
-            transition: color 0.3s;
-        }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
 
-        nav a:hover {
-            color: #666;
-        }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-size: 0.95rem;
+      transition: color 0.3s;
+    }
 
-        /* Hero Section with Photo */
-        .hero {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            max-width: 1200px;
-            margin: 4rem auto;
-            padding: 0 2rem;
-            gap: 4rem;
-            align-items: center;
-        }
+    nav a:hover {
+      color: #666;
+    }
 
-        .hero-image {
-            width: 100%;
-            max-width: 500px;
-            border-radius: 8px;
-        }
+    /* Hero Section with Photo */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+      gap: 4rem;
+      align-items: center;
+    }
 
-        .hero-text h1 {
-            font-size: 2.5rem;
-            font-weight: 300;
-            margin-bottom: 0.5rem;
-            color: #333;
-        }
+    .hero-image {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 8px;
+    }
 
-        .hero-text .subtitle {
-            font-size: 1.1rem;
-            color: #666;
-            margin-bottom: 1.5rem;
-        }
+    .hero-text h1 {
+      font-size: 2.5rem;
+      font-weight: 300;
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+      color: #333;
+    }
 
-        .hero-text p {
-            font-size: 1rem;
-            line-height: 1.8;
-            color: #555;
-            margin-bottom: 1rem;
-        }
+    .hero-text .subtitle {
+      font-size: 1.1rem;
+      color: #666;
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+    }
 
-        /* Services Section */
-        .services-section {
-            background-color: #f9f9f9;
-            padding: 5rem 2rem;
-        }
+    .hero-text p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #555;
+      margin-bottom: 1rem;
+    }
 
-        .services-content {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+    /* Services Section */
+    .services-section {
+      background-color: #f9f9f9;
+      padding: 5rem 2rem;
+    }
 
-        .services-section h2 {
-            font-size: 2rem;
-            font-weight: 300;
-            text-align: center;
-            margin-bottom: 1rem;
-            color: #333;
-        }
+    .services-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
-        .services-intro {
-            text-align: center;
-            font-size: 1.1rem;
-            color: #666;
-            margin-bottom: 3rem;
-        }
+    .services-section h2 {
+      font-size: 2rem;
+      font-weight: 300;
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #333;
+    }
 
-        .cta-button {
-            display: inline-block;
-            padding: 1rem 2rem;
-            background-color: #333;
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            font-size: 0.95rem;
-            transition: background-color 0.3s;
-            text-align: center;
-        }
+    .services-intro {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #666;
+      margin-bottom: 3rem;
+    }
 
-        .cta-button:hover {
-            background-color: #555;
-        }
+    .cta-button {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background-color: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.95rem;
+      transition: background-color 0.3s;
+      text-align: center;
+    }
 
-        .button-center {
-            text-align: center;
-            margin: 2rem 0;
-        }
+    .cta-button:hover {
+      background-color: #555;
+    }
 
-        /* About Section */
-        .about-section {
-            max-width: 900px;
-            margin: 5rem auto;
-            padding: 0 2rem;
-        }
+    .button-center {
+      text-align: center;
+      margin: 2rem 0;
+    }
 
-        .about-section h2 {
-            font-size: 2rem;
-            font-weight: 300;
-            margin-bottom: 2rem;
-            color: #333;
-        }
+    /* About Section */
+    .about-section {
+      max-width: 900px;
+      margin: 5rem auto;
+      padding: 0 2rem;
+    }
 
-        .about-section p {
-            font-size: 1rem;
-            line-height: 1.8;
-            color: #555;
-            margin-bottom: 1.5rem;
-        }
+    .about-section h2 {
+      font-size: 2rem;
+      font-weight: 300;
+      margin-bottom: 2rem;
+      color: #333;
+    }
 
-        /* Details Grid */
-        .details-section {
-            background-color: #f9f9f9;
-            padding: 5rem 2rem;
-        }
+    .about-section p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #555;
+      margin-bottom: 1.5rem;
+    }
 
-        .details-content {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+    /* Details Grid */
+    .details-section {
+      background-color: #f9f9f9;
+      padding: 5rem 2rem;
+    }
 
-        .details-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 3rem;
-            margin-top: 3rem;
-        }
+    .details-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
-        .detail-box h3 {
-            font-size: 1.3rem;
-            font-weight: 400;
-            margin-bottom: 1rem;
-            color: #333;
-        }
+    .details-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 3rem;
+      margin-top: 3rem;
+    }
 
-        .detail-box ul {
-            list-style: none;
-        }
+    .detail-box h3 {
+      font-size: 1.3rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+      color: #333;
+    }
 
-        .detail-box li {
-            padding: 0.5rem 0;
-            color: #555;
-            font-size: 0.95rem;
-        }
+    .detail-box ul {
+      list-style: none;
+    }
 
-        .detail-box li::before {
-            content: "• ";
-            color: #999;
-            margin-right: 0.5rem;
-        }
+    .detail-box li {
+      padding: 0.5rem 0;
+      color: #555;
+      font-size: 0.95rem;
+    }
 
-        .price-feature {
-            font-size: 1.8rem;
-            color: #333;
-            font-weight: 300;
-            margin: 2rem 0;
-            text-align: center;
-        }
+    .detail-box li::before {
+      content: "• ";
+      color: #999;
+      margin-right: 0.5rem;
+    }
 
-        /* Contact Section */
-        .contact-section {
-            max-width: 900px;
-            margin: 5rem auto;
-            padding: 0 2rem;
-            text-align: center;
-        }
+    .price-feature {
+      font-size: 1.8rem;
+      color: #333;
+      font-weight: 300;
+      margin: 2rem 0;
+      text-align: center;
+    }
 
-        .contact-section h2 {
-            font-size: 2rem;
-            font-weight: 300;
-            margin-bottom: 2rem;
-            color: #333;
-        }
+    /* Contact Section */
+    .contact-section {
+      max-width: 900px;
+      margin: 5rem auto;
+      padding: 0 2rem;
+      text-align: center;
+    }
 
-        .contact-info {
-            margin: 2rem 0;
-        }
+    .contact-section h2 {
+      font-size: 2rem;
+      font-weight: 300;
+      margin-bottom: 2rem;
+      color: #333;
+    }
 
-        .contact-info p {
-            font-size: 1.1rem;
-            color: #555;
-            margin: 1rem 0;
-        }
+    .contact-info {
+      margin: 2rem 0;
+    }
 
-        .contact-info a {
-            color: #333;
-            text-decoration: none;
-            border-bottom: 1px solid #333;
-            transition: color 0.3s;
-        }
+    .contact-info p {
+      font-size: 1.1rem;
+      color: #555;
+      margin: 1rem 0;
+    }
 
-        .contact-info a:hover {
-            color: #666;
-        }
+    .contact-info a {
+      color: #333;
+      text-decoration: none;
+      border-bottom: 1px solid #333;
+      transition: color 0.3s;
+    }
 
-        /* Footer */
-        footer {
-            background-color: #333;
-            color: #ccc;
-            text-align: center;
-            padding: 2rem;
-            font-size: 0.85rem;
-            margin-top: 5rem;
-        }
+    .contact-info a:hover {
+      color: #666;
+    }
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: #ccc;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.85rem;
+      margin-top: 5rem;
+    }
 
-            .hero-image {
-                order: -1;
-                margin: 0 auto;
-            }
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
 
-            .hero-text h1 {
-                font-size: 2rem;
-            }
+      .hero-image {
+        order: -1;
+        margin: 0 auto;
+      }
 
-            nav ul {
-                flex-direction: column;
-                gap: 1rem;
-                align-items: center;
-            }
+      .hero-text h1 {
+        font-size: 2rem;
+      }
 
-            .header-content {
-                flex-direction: column;
-                gap: 1rem;
-            }
-        }
-    </style>
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+      }
+
+      .header-content {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <header>
-        <div class="header-content">
-            <div class="logo">Courtney Steck</div>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+  <header>
+    <div class="header-content">
+      <div class="logo">Courtney Steck</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <img src="https://raw.githubusercontent.com/courtneybsteck/myservices/main/profile-photo.jpg" class="hero-image" alt="Profile Photo">
+
+      <div class="hero-text">
+        <h1>Courtney Steck</h1>
+        <div class="subtitle">Pre-Licensed Professional Counselor</div>
+
+        <p>Life’s challenges can feel overwhelming and isolating. You might be struggling emotionally, navigating a difficult transition, or feeling stuck in patterns that no longer serve you. Perhaps the echoes of past experiences or traumas are shaping how you connect with others. You’re ready for something to change, even if the next step feels uncertain. This is where our work together begins.</p>
+<p>I am committed to creating a warm, supportive space where you can show up as your complete, authentic self. My goal is to truly understand your story in all its depth and complexity. Together, we’ll carve out a new path toward meaningful, lasting change.</p>
+        <p> <em style="font-size: 85%;">Courtney is a clinical intern at <a href="https://www.chitherapywell.com/" target="_blank"> Chicago Therapy and Wellness</a> and works under the supervision of a fully licensed clinician.</em></p>
+      </div>
+    </section>
+
+    <section class="services-section" id="services">
+      <div class="services-content">
+        <h2>Services</h2>
+        <p class="services-intro">Compassionate therapy for individuals and couples</p>
+
+        <div class="button-center">
+          <a href="#contact" class="cta-button">Learn More</a>
         </div>
-    </header>
+      </div>
+    </section>
 
-    <main>
-        <section class="hero" id="home">
-            <img src="https://raw.githubusercontent.com/courtneybsteck/myservices/main/profile-photo.jpg" class="hero-image" alt="Profile Photo">
-            
-            <div class="hero-text">
-                <h1>Courtney Steck</h1>
-                <p class="subtitle">Pre-Licensed Professional (she, her)</p>
-                
-                <p>Life's challenges can feel overwhelming and isolating at times. You might be struggling with anxiety or self-doubt, stuck in patterns that no longer serve you, or noticing how past traumas continue to impact the way you connect with others. You're ready for something to change but may be unsure of what step to take next.</p>
-                
-                <p>This is where our work together begins. I'm committed to creating a warm, supportive space where you can show up as your complete, authentic self. My goal is to truly understand you and your story in all its complexity.</p>
-            </div>
-        </section>
+    <section class="about-section" id="about">
+      <h2>Approach</h2>
 
-        <section class="services-section" id="services">
-            <div class="services-content">
-                <h2>Services</h2>
-                <p class="services-intro">Compassionate therapy for individuals and couples</p>
-                
-                <div class="button-center">
-                    <a href="#contact" class="cta-button">Learn More</a>
-                </div>
-            </div>
-        </section>
+      <p>You are the expert on your own life, and I'm here to listen deeply, reflect with care, and walk alongside you as you make meaning of your past and envision new possibilities for the future. Together, we'll clarify your vision for growth, connection, and meaningful change. From there, we'll co-create a path forward.</p>
 
-        <section class="about-section" id="about">
-            <h2>Approach</h2>
-            
-            <p>You are the expert on your own life, and I'm here to listen deeply, reflect with care, and walk alongside you as you make meaning of your past and envision new possibilities for the future. Together, we'll clarify your vision for growth, connection, and meaningful change. From there, we'll co-create a path forward.</p>
-            
-            <p>Therapy, much like life itself, holds the full spectrum of human emotion—and yes, that includes moments of genuine laughter and lightness alongside the deeper work. I believe there's room for humor and joy even as we navigate the difficult terrain together.</p>
-            
-            <p>I draw from an integrative framework including person-centered, relational, psychodynamic, somatic, feminist, and multicultural approaches. My work is strength-based and honors your lived experience.</p>
-        </section>
+      <p>Therapy, much like life itself, holds the full spectrum of human emotion—and yes, that includes moments of genuine laughter and lightness alongside the deeper work. I believe there's room for humor and joy even as we navigate the difficult terrain together.</p>
 
-        <section class="details-section">
-            <div class="details-content">
-                <h2>Practice Details</h2>
-                
-                <div class="price-feature">$20 per session</div>
-                
-                <div class="details-grid">
-                    <div class="detail-box">
-                        <h3>Who I Work With</h3>
-                        <ul>
-                            <li>Teens, adults, and elders (65+)</li>
-                            <li>Individuals and couples</li>
-                            <li>LGBTQ+ affirming</li>
-                            <li>Racial justice allied</li>
-                            <li>Sex worker allied</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="detail-box">
-                        <h3>Insurance & Payment</h3>
-                        <ul>
-                            <li>BlueCross BlueShield</li>
-                            <li>Cigna and Evernorth</li>
-                            <li>Sliding scale available</li>
-                            <li>Credit cards accepted</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="detail-box">
-                        <h3>Location</h3>
-                        <ul>
-                            <li>Available in-person and online</li>
-                            <li>Chicago Therapy & Wellness</li>
-                            <li>1925 N Clybourn Ave, Suite 401</li>
-                            <li>Chicago, IL 60614</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <p>I draw from an integrative framework including person-centered, relational, psychodynamic, somatic, feminist, and multicultural approaches. My work is strength-based and honors your lived experience.</p>
+    </section>
 
-        <section class="contact-section" id="contact">
-            <h2>Contact</h2>
-            <p>Please contact me for information on scheduling or to set up your free 15-minute consultation.</p>
-            
-            <div class="contact-info">
-                <p><a href="tel:8722957724">(872) 295-7724</a></p>
-                <p>Chicago, IL</p>
-            </div>
-            
-            <div class="button-center">
-                <a href="tel:8722957724" class="cta-button">Schedule Consultation</a>
-            </div>
-            
-            <p style="margin-top: 2rem; font-size: 0.9rem; color: #666;">Clinical intern working toward MA in Clinical Mental Health Counseling</p>
-        </section>
-    </main>
+    <section class="details-section">
+      <div class="details-content">
+        <h2>Practice Details</h2>
 
-    <footer>
-        <p>© 2026 Therapy Services. All rights reserved.</p>
-    </footer>
+        <div class="price-feature">$20 per session</div>
+
+        <div class="details-grid">
+          <div class="detail-box">
+            <h3>Who I Work With</h3>
+            <ul>
+              <li>Teens, adults, and elders (65+)</li>
+              <li>Individuals and couples</li>
+              <li>LGBTQ+ affirming</li>
+              <li>Racial justice allied</li>
+              <li>Sex worker allied</li>
+            </ul>
+          </div>
+
+          <div class="detail-box">
+            <h3>Insurance & Payment</h3>
+            <ul>
+              <li>BlueCross BlueShield</li>
+              <li>Cigna and Evernorth</li>
+              <li>Sliding scale available</li>
+              <li>Credit cards accepted</li>
+            </ul>
+          </div>
+
+          <div class="detail-box">
+            <h3>Location</h3>
+            <ul>
+              <li>Available in-person and online</li>
+              <li>Chicago Therapy & Wellness</li>
+              <li>1925 N Clybourn Ave, Suite 401</li>
+              <li>Chicago, IL 60614</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <h2>Contact</h2>
+      <p>Please contact me for information on scheduling or to set up your free 15-minute consultation.</p>
+
+      <div class="contact-info">
+        <p><a href="tel:8722957724">(872) 295-7724</a></p>
+        <p>Chicago, IL</p>
+      </div>
+
+      <div class="button-center">
+        <a href="tel:8722957724" class="cta-button">Schedule Consultation</a>
+      </div>
+
+      <p style="margin-top: 2rem; font-size: 0.9rem; color: #666;">Clinical intern working toward MA in Clinical Mental Health Counseling</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Therapy Services. All rights reserved.</p>
+  </footer>
 </body>
+
 </html>
