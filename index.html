@@ -389,7 +389,29 @@
         flex-direction: column;
         gap: 1rem;
       }
-    }
+    .details-grid {
+    grid-template-columns: 1fr;  /* Stack columns vertically on mobile */
+    gap: 2rem;
+  }
+
+  .cta-button {
+    width: 100%;  /* Full width buttons on mobile */
+    max-width: 300px;
+  }
+
+  .send-button {
+    width: 100%;
+    max-width: 150px;
+  }
+
+  .logo {
+    font-size: 1.5rem;  /* Smaller logo on mobile */
+  }
+
+  .tag {
+    font-size: 0.85rem;  /* Slightly smaller tags */
+  }
+}
   </style>
 </head>
 
@@ -412,12 +434,13 @@
       <img src="https://raw.githubusercontent.com/courtneybsteck/myservices/main/profile-photo.jpg" class="hero-image" alt="Profile Photo">
 
       <div class="hero-text">
-        <h1>Courtney Steck</h1>
+        <h1>Courtney Steck <span style="font-size: 1.2rem; font-weight: 300;">| she/her</span></h1>
         <div class="subtitle">Pre-Licensed Professional Counselor</div>
 
         <p>Life’s challenges can feel overwhelming and isolating. You might be struggling emotionally, navigating a difficult transition, or feeling stuck in patterns that no longer serve you. Perhaps the echoes of past experiences or traumas are shaping how you connect with others. You’re ready for something to change, even if the next step feels uncertain. This is where our work together begins.</p>
         <p>I am committed to creating a warm, supportive space where you can show up as your complete, authentic self. My goal is to truly understand your story in all its depth and complexity. Together, we’ll carve out a new path toward meaningful, lasting change.</p>
-        <p> <em style="font-size: 85%;">Courtney is a clinical intern at <a href="https://www.chitherapywell.com/" target="_blank"> Chicago Therapy and Wellness</a> and works under the supervision of a fully licensed clinician.</em></p>
+        <p> <em style="font-size: 85%;">Courtney is a clinical intern at <a href="https://www.chitherapywell.com/" target="_blank">Chicago Therapy and Wellness</a>. She is pursuing a master's degree in clinical mental health counseling (anticipated June 2026) and works under the supervision of a fully licensed clinician.
+</em></p>
 
           <div class="button-center" style="margin-top: 2.0rem; margin-bottom: 1rem;"">
           <a href="https://calendly.com/courtneybsteck/15-minute-consultation-call" target="blank" class="cta-button">Schedule a Free Consultation Call</a>
@@ -493,7 +516,7 @@
 
     <section class="contact-section" id="contact">
       <h2>Contact</h2>
-      <p2>Submit the form below or <a href="https://calendly.com/courtneybsteck/15-minute-consultation-call" target="blank">schedule a free 15-minute consultation call</a>.</p2>
+      <p2>Submit the form below or <a href="https://calendly.com/courtneybsteck/15-minute-consultation-call" target="blank">schedule a free 15-minute consultation call</a>.</p2><br><br>
 
 <div class="form-group">    
 <form
