@@ -46,6 +46,7 @@
       flex-wrap: wrap;
       gap: 0.5rem;
       margin-top: 1rem;
+      justify-content: center;
     }
 
     /* boxes in columns */
@@ -178,6 +179,7 @@
       /* ADD !important to override the link styles */
       text-decoration: none;
       border-radius: 4px;
+      border: none;
       font-size: 0.95rem;
       transition: background-color 0.3s;
       text-align: center;
@@ -191,6 +193,35 @@
     }
 
     .cta-button:visited {
+      color: white !important;
+      /* ADD THIS */
+    }
+    
+    .send-button {
+      margin-left: 0;
+      display: block;
+      padding: 0.5rem 1.0rem;
+      width: 100px;
+      /* ADD THIS - adjust the number to your preference */
+      background-color: #749c9f;
+      color: white !important;
+      /* ADD !important to override the link styles */
+      text-decoration: none;
+      border-radius: 4px;
+      border: none;
+      font-size: 0.95rem;
+      transition: background-color 0.3s;
+      text-align: center;
+    }
+
+    .send-button:hover {
+      background-color: #8fb1b3;
+      /* CHANGED - lighter hover color */
+      color: white !important;
+      /* ADD THIS */
+    }
+
+    .send-button:visited {
       color: white !important;
       /* ADD THIS */
     }
@@ -231,10 +262,9 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 1.0rem;
-      margin-top: 2rem;
+      margin: 2.0rem auto 0 auto;
       max-width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
+      
     }
 
     .detail-box h3 {
@@ -242,16 +272,19 @@
       font-weight: 400;
       margin-bottom: 1rem;
       color: #333;
+      text-align: center;
     }
 
     .detail-box ul {
       list-style: none;
+      text-align: center;
     }
 
     .detail-box li {
       padding: 0.5rem 0;
       color: #555;
       font-size: 0.95rem;
+      text-align: center;
     }
 
     .detail-box li::before {
@@ -283,27 +316,43 @@
       color: #333;
     }
 
-    .contact-info {
-      margin: 2rem 0;
-    }
+/* Contact Form styling */
+.contact-form {
+  max-width: 600px;
+  margin: 3rem auto;
+  text-align: left;
+}
 
-    .contact-info p {
-      font-size: 1.1rem;
-      color: #555;
-      margin: 1rem 0;
-    }
+.form-group {
+  margin-bottom: 1.5rem;
+}
 
-    .contact-info a {
-      color: #333;
-      text-decoration: none;
-      border-bottom: 1px solid #333;
-      transition: color 0.3s;
-    }
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  color: #333;
+  font-weight: 500;
+}
 
-    .contact-info a:hover {
-      color: #666;
-    }
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+}
 
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #749c9f;
+}
+    
+    
+    
     /* Footer */
     footer {
       background-color: #333;
@@ -351,8 +400,7 @@
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#services">Session Details</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -371,19 +419,20 @@
         <p>I am committed to creating a warm, supportive space where you can show up as your complete, authentic self. My goal is to truly understand your story in all its depth and complexity. Together, we’ll carve out a new path toward meaningful, lasting change.</p>
         <p> <em style="font-size: 85%;">Courtney is a clinical intern at <a href="https://www.chitherapywell.com/" target="_blank"> Chicago Therapy and Wellness</a> and works under the supervision of a fully licensed clinician.</em></p>
 
-        <div class="button-center" style="margin-top: 2.0rem; margin-bottom: 1rem;">
-          <a href="#about" class="cta-button"> Learn More about Working Together</a>
-        </div>
-
-        <div class="button-center">
+          <div class="button-center" style="margin-top: 2.0rem; margin-bottom: 1rem;"">
           <a href="https://calendly.com/courtneybsteck/15-minute-consultation-call" target="blank" class="cta-button">Schedule a Free Consultation Call</a>
         </div>
+        <div class="button-center">
+          <a href="#contact" class="cta-button"> Send Me a Message</a>
+        </div>
+
+      
 
     </section>
 
     <section class="services-section" id="services">
       <div class="services-content">
-        <h2>Services</h2>
+        <h2>Session Details</h2>
 
         <div class="details-grid">
           <div class="detail-box">
@@ -413,19 +462,27 @@
             <h3>Advocacy Commitments</h3>
             <div class="tag-container">
               <span class="tag">Queer affirming</span>
+              </div>
+              <div class="tag-container">
               <span class="tag">BIPOC & immigrant affirming</span>
             </div>
             <div class="tag-container">
               <span class="tag">Anti-oppressive practice</span>
-              <span class="tag">Racial justice allied</span>
+                               </div>
+               <div class="tag-container">
+               <span class="tag">Racial justice allied</span>
+               </div>
             </div>
-          </div>
+        
 
           <div class="detail-box">
             <h3>Cost & Payment</h3>
             <div class="tag-container">
               <span class="tag">Self-Pay: $20 per session<br>Credit Cards Accepted </span>
+              </div>
+              <div class="tag-container">
               <span class="tag">Accepted Insurance:<br> BlueCross BlueShield<br>Cigna</span>
+                 </div>
             </div>
           </div>
 
@@ -436,19 +493,35 @@
 
     <section class="contact-section" id="contact">
       <h2>Contact</h2>
-      <div class="button-center">
-        <a href="https://calendly.com/courtneybsteck/15-minute-consultation-call" target="blank" class="cta-button">Schedule a Free Consultation Call</a>
-      </div>
+      <p2>Submit the form below or <a href="https://calendly.com/courtneybsteck/15-minute-consultation-call" target="blank">schedule a free 15-minute consultation call</a>.</p2>
 
-      </div>
-
-      </div>
+<div class="form-group">    
+<form
+  action="https://formspree.io/f/xzdzleky"
+  method="POST"
+>
+   <label>
+    Name:
+    <input type="text" name="name">
+  </label>
+  <label>
+    Email address:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Message:
+    <textarea name="message" rows="8"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit" class="send-button">Send</button>
+</form>
+     
 
     </section>
   </main>
 
   <footer>
-    <p>© 2026 Therapy Services. All rights reserved.</p>
+    <p>© 2026 Courtney Steck. All rights reserved.</p>
   </footer>
 </body>
 
