@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCE Research & Evaluation: Statistical Test Selector</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <style>
+        :root {
+            --navy: #1a2a3a;
+            --slate: #4a5568;
+            --teal: #2c7a7b;
+            --bg: #f8fafc;
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.5;
+            background-color: var(--bg);
+            color: var(--navy);
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+        h1 { border-bottom: 2px solid var(--teal); padding-bottom: 10px; color: var(--teal); }
+        .section { margin-top: 40px; }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 0.95rem;
+        }
+        th, td {
+            padding: 15px;
+            border: 1px solid #e2e8f0;
+            text-align: left;
+        }
+        th { background-color: var(--navy); color: white; text-transform: uppercase; letter-spacing: 1px; }
+        tr:nth-child(even) { background-color: #f1f5f9; }
+        
+        .type-tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .parametric { background: #bee3f8; color: #2b6cb0; }
+        .non-parametric { background: #fed7d7; color: #9b2c2c; }
+
+        .mermaid { display: flex; justify-content: center; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>NCE Statistical Decision Matrix</h1>
+    <p>A reliable reference for the Research and Program Evaluation domain of the National Counselor Examination.</p>
+
+    <div class="section">
+        <h2>Decision Tree: Selecting the Correct Test</h2>
+        <div class="mermaid">
+            graph TD
+            START[<b>Research Question</b>] --> Q1{Difference or<br/>Relationship?}
+            
+            %% Relationship Branch
+            Q1 -- Relationship --> R1{Data Level?}
+            R1 -- "Interval/Ratio<br/>(Parametric)" --> PEAR[<b>Pearson Product-Moment Correlation (r)</b>]
+            R1 -- "Ordinal/Ranked<br/>(Non-parametric)" --> R2{Sample Size?}
+            R2 -- Standard --> SPEAR[<b>Spearman Rho (&rho;)</b>]
+            R2 -- "Small/Tied Ranks" --> KEN[<b>Kendall's Tau (&tau;)</b>]
+
+            %% Difference Branch
+            Q1 -- Difference --> D1{Data Level?}
+            D1 -- "Nominal<br/>(Categories)" --> CHI[<b>Chi-Square Test</b>]
+            
+            D1 -- "Interval/Ratio<br/>(Parametric)" --> P_GRP{How many<br/>Groups?}
+            P_GRP -- "2 Groups" --> TTEST[<b>t-test</b>]
+            P_GRP -- "3+ Groups" --> P_COV{Covariates?}
+            P_COV -- No --> ANOVA[<b>ANOVA (F-test)</b>]
+            P_COV -- Yes --> ANCOVA[<b>ANCOVA</b>]
+
+            D1 -- "Ordinal/Skewed<br/>(Non-parametric)" --> NP_GRP{How many<br/>Groups?}
+            NP_GRP -- "2 Groups" --> NP_TYPE{Independent or<br/>Correlated?}
+            NP_TYPE -- Independent --> MWU[<b>Mann-Whitney U</b>]
+            NP_TYPE -- Correlated --> WIL[<b>Wilcoxon Signed-Rank</b>]
+            NP_GRP -- "3+ Groups" --> KW[<b>Kruskal-Wallis</b>]
+
+            style START fill:#edf2f7,stroke:#2d3748
+            style PEAR fill:#ebf8ff,stroke:#3182ce
+            style TTEST fill:#ebf8ff,stroke:#3182ce
+            style ANOVA fill:#ebf8ff,stroke:#3182ce
+            style CHI fill:#fff5f5,stroke:#c53030
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Technical Summary Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Statistical Test</th>
+                    <th>Type</th>
+                    <th>Level of Measurement</th>
+                    <th>Application</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b>t-test</b></td>
+                    <td><span class="type-tag parametric">Parametric</span></td>
+                    <td>Interval / Ratio</td>
+                    <td>Compares the means of <b>two</b> groups.</td>
+                </tr>
+                <tr>
+                    <td><b>ANOVA</b></td>
+                    <td><span class="type-tag parametric">Parametric</span></td>
+                    <td>Interval / Ratio</td>
+                    <td>Compares the means of <b>three or more</b> groups (One-way or Factorial).</td>
+                </tr>
+                <tr>
+                    <td><b>ANCOVA</b></td>
+                    <td><span class="type-tag parametric">Parametric</span></td>
+                    <td>Interval / Ratio</td>
+                    <td>Analyzes differences between groups while <b>controlling for a covariate</b> (nuisance variable).</td>
+                </tr>
+                <tr>
+                    <td><b>Pearson r</b></td>
+                    <td><span class="type-tag parametric">Parametric</span></td>
+                    <td>Interval / Ratio</td>
+                    <td>Measures the strength and direction of a <b>linear relationship</b> between two variables.</td>
+                </tr>
+                <tr>
+                    <td><b>Chi-Square</b></td>
+                    <td><span class="type-tag non-parametric">Non-parametric</span></td>
+                    <td>Nominal</td>
+                    <td>Tests for differences in <b>frequencies/proportions</b> (e.g., "head counts").</td>
+                </tr>
+                <tr>
+                    <td><b>Mann-Whitney U</b></td>
+                    <td><span class="type-tag non-parametric">Non-parametric</span></td>
+                    <td>Ordinal</td>
+                    <td>Compares two <b>independent</b> groups (The non-parametric version of the t-test).</td>
+                </tr>
+                <tr>
+                    <td><b>Wilcoxon Signed-Rank</b></td>
+                    <td><span class="type-tag non-parametric">Non-parametric</span></td>
+                    <td>Ordinal</td>
+                    <td>Compares two <b>matched or paired</b> groups (Non-parametric paired t-test).</td>
+                </tr>
+                <tr>
+                    <td><b>Kruskal-Wallis</b></td>
+                    <td><span class="type-tag non-parametric">Non-parametric</span></td>
+                    <td>Ordinal</td>
+                    <td>Compares <b>three or more</b> groups (Non-parametric version of ANOVA).</td>
+                </tr>
+                <tr>
+                    <td><b>Spearman Rho</b></td>
+                    <td><span class="type-tag non-parametric">Non-parametric</span></td>
+                    <td>Ordinal</td>
+                    <td>Measures the relationship between two variables using <b>ranked data</b>.</td>
+                </tr>
+                <tr>
+                    <td><b>Kendall's Tau</b></td>
+                    <td><span class="type-tag non-parametric">Non-parametric</span></td>
+                    <td>Ordinal</td>
+                    <td>A correlation coefficient used for <b>small datasets</b> or those with many tied ranks.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+</script>
+
+</body>
+</html>
