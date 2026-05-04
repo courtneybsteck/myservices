@@ -1,2 +1,366 @@
-blarp
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Client Resources</title>
+  <!-- Prevent indexing and crawling -->
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="yandex" content="noindex, nofollow">
+  <!-- Reduce referrer leakage -->
+  <meta name="referrer" content="no-referrer">
+  <!-- Viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="icon" href="/CS-logo-32x32.png">
+  <link rel="shortcut icon" href="CS-logo-32x32.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="CS-logo-180x180.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="CS-logo-152x152.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="CS-logo-120x120.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="CS-logo-192x192.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Raleway', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #fff3ee;
+    }
+
+    a {
+      color: #333;
+      text-decoration: underline;
+    }
+
+    a:visited {
+      color: #333;
+    }
+
+    a:hover {
+      color: #897c78;
+    }
+
+    a.custom-link {
+      color: #197b84;
+    }
+
+    a.custom-link:visited {
+      color: #197b84;
+    }
+
+    a.custom-link:hover {
+      color: #749c9f;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Crimson Text', serif;
+    }
+
+    /* Header/Navigation */
+    header {
+      background-color: #e5cfc8;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid #e5e5e5;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'Crimson Text', serif;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #3c5759;
+      text-decoration: none;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-size: 0.95rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #666;
+    }
+
+    /* Resources Section */
+    .resources-section {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+    }
+
+    .resources-section h1 {
+      font-size: 2.5rem;
+      font-weight: 300;
+      color: #3c5759;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .session-date {
+      font-family: 'Crimson Text', serif;
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: #197b84;
+      text-align: left;
+      margin-bottom: 1rem;
+    }
+
+    /* Minimalist Table */
+    .resources-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0 auto;
+    }
+
+    .resources-table th {
+      text-align: left;
+      padding: 1rem;
+      border-bottom: 1px solid #ddd;
+      font-weight: 400;
+      color: #3c5759;
+      font-size: 0.95rem;
+    }
+
+    .resources-table td {
+      padding: 1rem;
+      border-bottom: 1px solid #f0f0f0;
+      color: #555;
+      vertical-align: top;
+    }
+
+    .resources-table tbody tr:hover {
+      background-color: #fafafa;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #e5cfc8;
+      color: #666;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.85rem;
+      margin-top: 5rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+      }
+
+      .header-content {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .logo {
+        font-size: 1.5rem;
+      }
+
+      .resources-section h1 {
+        font-size: 2rem;
+      }
+
+      .session-date {
+        font-size: 1.2rem;
+      }
+
+      .resources-table {
+        font-size: 0.85rem;
+      }
+
+      .resources-table th,
+      .resources-table td {
+        padding: 0.75rem 0.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <a href="https://courtneybsteck.com" class="logo">Courtney Steck</a>
+      <nav>
+        <ul>
+          <li><a href="https://courtneybsteck.com">Back to Main Site</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="resources-section">
+      <h1>Resources</h1>
+
+       <div class="session-date"><b>Introduction to DBT</b></div>
+      <table class="resources-table">
+        <thead>
+          <tr>
+            <th><b>Concept/Skill</b></th>
+            <th><b>Resource</b></th>
+            <th><b>Description</b></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><p style="font-size: 25px">🍿📝</p>Emotional Flooding</td>
+            <td><a href="https://www.youtube.com/watch?v=CJimHt8uhHg" target="_blank">11-minute YouTube video</a></td>
+            <td>Therapist uses the Hulk to explain emotional flooding and how unchecked anger hijacks our body and mind, sabotaging our goals and relationships. On the flip side, it highlights anger's value as a signal, alerting us to deeper issues and emotions that deserve our attention. <br><br><b>Journaling Prompts:</b><br> <ul><li>What ideas or messages from this video stood out most to you? What about them felt important or meaningful?</li><li>Was there anything that felt especially accurate or relatable? Describe those moments and how they connect to your own experiences.</li><li>Other thoughts?</li></td>
+          </tr>
+
+          <tr>
+            <td><p style="font-size: 25px">🍿📝</p>What is DBT?</td>
+            <td><a href="https://www.youtube.com/watch?v=vi--GqNCLXY" target="_blank">4-minute YouTube video</a></td>
+            <td>A brief overview of the four skill sets you learn in DBT: mindfulness, distress tolerance, emotional regulation, interpersonal effectiveness.<br><br><b>Journaling Prompts:</b><br> <ul><li>Which of the DBT skill sets feel most relevant to your current challenges?</li><li>What concerns or hesitations do you have about learning these skills?</li><li>Other thoughts?</li></td>
+          </tr>
+
+          <tr>
+            <td><p style="font-size: 25px">🍿📝</p>Wise Mind</td>
+            <td><a href="/resources/resource-library/DBT-wise-mind_explanation.pdf" target="_blank">Info Sheet</a></td>
+            <td>Describes emotional mind and reasonable mind; illustrates how wise mind is the integration of both. This concept is central to DBT.<br><br><b>Journaling Prompts:</b><br> <ul><li>Which of these states of mind have you experienced? What does it feel like to be in each one?</li><li>Other thoughts?</li></td>
+          </tr>
+
+          <tr>
+            <td><p style="font-size: 25px">🍿📝</p>Wise Mind</td>
+            <td><a href="https://www.youtube.com/watch?v=-uOGRaTaVv4&list=PLsvXJBMIRhWOd5HW47SBpB7ExFeCOQHy_&index=18&t=1s" target="_blank">3-minute YouTube video</a></td>
+            <td>This animated video does a great job explaining the different roles of emotion mind and reasonable mind, and how the goal of DBT is to help you re-engage with your wise mind to make decisions that are aligned with your goals and values.<br><br><b>Journaling Prompts:</b><br> <ul><li>What are the drawbacks of being solely in emotion mind?</li><li>What are the drawbacks of being solely in reasonable mind?</li><li>Think about a recent challenging moment where you responded from emotion mind or reasonable mind. How might wise mind have responded differently?</li><li>Other thoughts?</li></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+     <section class="resources-section">
+     <div class="session-date"><b>Mindfulness Training Exercises</b></div>
+      <table class="resources-table">
+        <thead>
+          <tr>
+            <th><b>Skill</b></th>
+            <th><b>Resource</b></th>
+            <th><b>Description</b></th>
+          </tr>
+        </thead>
+        <tbody>
+           <tr>
+            <td>Mindfulness - The Foundational Skill</td>
+            <td><a href="https://www.youtube.com/watch?v=PCJ0R6vAUnw&list=PLsvXJBMIRhWOd5HW47SBpB7ExFeCOQHy_" target="_blank">3-minute YouTube video</a></td>
+            <td>Psychologist who came up with DBT talks about the influence from Zen Buddhism.</td>
+          </tr>
+          <tr>
+            <td>What & How Skills</td>
+            <td><a href="/resources/resource-library/dbt-mindfulness-what-and-how-skills.pdf" target="_blank">Handout</a></td>
+            <td>Mindfulness is all about paying attention to the present moment, without judging or trying to change it. This handout goes over the 'what' skills of mindfulness (as in <i>what you're doing</i> - observing, describing, participating), as well as the 'how' skills (as in <i>how your doing it </i>- nonjudgmentally, one-mindfully, effectively).</td>
+          </tr>
+          
+          <tr>
+            <td>Single Object Mindfulness</td>
+            <td><a href="https://www.youtube.com/watch?v=xcJR8LB00gU">7-min YouTube video</a></td>
+            <td>Suggestion: Watch this video once through and just try focusing on the object shown on-screen. Then, repeat the exercise using a real-life object, but listen along to the audio to guide you.<br><br> This is a training exercise that will help you build the muscle of one-mindedness, but you can also use it in the moment, when you are feeling emotionally flooded.</td>
+          </tr>
+
+          <tr>
+            <td>Focusing Attention through Body Scanning</td>
+            <td><a href="https://www.youtube.com/watch?v=GJyCIzUvivQ">5-min YouTube video</a></td>
+            <td>Just as the guide says in the intro, the purpose of this exercise isn't to relax, but rather to focus your attention on and bring awareness to what's happening in your body. This skill is essential to noticing the physical cues of emotional flooding when they start to emerge. </td>
+          </tr>
+
+          <tr>
+            <td>Noticing without Judgment</td>
+            <td><a href="https://www.youtube.com/watch?v=rnVjNazJpUQ">3-min YouTube video</a></td>
+            <td>This exercise is designed to help you build the skill of mindfulness <i>without judgment</i>. The idea is to resist the urge to label your experience as 'good' or 'bad', and not try to change it or push it away. This is considered on one of the 'how' skills of mindfulness. Check out the <a href="/resources/resource-library/dbt-mindfulness-what-and-how-skills.pdf" target="_blank">DBT 'What' & 'How' Skills handout</a> for more on this.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    
+     <section class="resources-section">
+     <div class="session-date"><b>Distress Tolerance</b></div>
+      <table class="resources-table">
+        <thead>
+          <tr>
+            <th><b>Concept/Skill</b></th>
+            <th><b>Resource</b></th>
+            <th><b>Description</b></th>
+          </tr>
+        </thead>
+        <tbody>
+         
+          <tr>
+            <td>Overview of TIPP Distress Tolerance Skills</td>
+            <td><a href="/resources/resource-library/dbt-tipp_handout.pdf" target=_blank>Info Sheet</td>
+            <td>One-pager describing the skills in the TIPP acronym: temperature, intensive exercise, paced breathing, and progressive muscle relaxation. Outlines why they work and how to practice each.</td>
+          </tr>
+          
+          <tr>
+            <td>Intro to Progressive Muscle Relaxation (PMR)</td>
+            <td><a href="https://www.youtube.com/watch?v=Dn__nO3Clog" target=_blank>2-minute YouTube video</td>
+            <td>Short introduction to the second 'P' in TIPP - progressive (or paired) muscle relaxation.</td>
+          </tr>
+          
+          
+          <tr>
+            <td>Short guided PMR Exercise</td>
+            <td><a href="https://www.youtube.com/watch?v=XYaSuQ-mgY8" target=_blank>5-minute YouTube video</td>
+            <td>This video provides a brief explanation of progressive muscle relaxation, along with a quick guided exercise to give you a sense of what it is. </td>
+          </tr>
+          
+          <tr>
+            <td>Full Guided PMR Exercise</td>
+            <td><a href="https://www.youtube.com/watch?v=ihO02wUzgkc" target=_blank>15-minute YouTube Video</td>
+            <td>This is a nice, full-length guided exercise. You can watch while you do the exercise, or just listen to the audio,</td>
+          </tr>
+          
+          <!-- tow template for copy/paste --
+            
+            <tr>
+            <td>x</td>
+            <td><a href="x" target=_blank>link name</td>
+            <td>text.</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </section>
+>
+    
+    
+  </main>
+
+  <footer>
+    <p>© 2026 Courtney Steck. All rights reserved.</p>
+    <p style="margin-top: 0.5rem;"><a href="https://courtneybsteck.com" class="custom-link">Return to main website</a></p>
+  </footer>
+</body>
+
+</html>
