@@ -499,6 +499,12 @@
   background-color: #69888a;
 }
 
+.signup-message {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: #3c5759;
+}
+
 @media (max-width: 480px) {
   .signup-form-row {
     flex-direction: column;
@@ -541,13 +547,13 @@
           <p>I am currently completing the Illinois licensure process.</p>
           <p>Sign up to receive an email when I announce my next practice location and begin accepting new clients.</p>
           <!-- embedded form -->
-<!-- embedded form -->
-<form class="signup-form" action="https://formspree.io/f/mgojpzjk" method="POST">
-  <div class="signup-form-row">
-    <input type="email" name="email" placeholder="Your email" required>
-    <button type="submit">Submit</button>
-  </div>
-</form>
+          <form class="signup-form" id="signup-form">
+            <div class="signup-form-row">
+              <input type="email" name="email" placeholder="Your email" required>
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+          <p id="signup-message" class="signup-message" style="display:none;"></p>
         </div>
         
       </div>
@@ -561,6 +567,34 @@
   <footer>
     <p>© 2026 Courtney Steck. All rights reserved.</p>
   </footer>
+
+  <script>
+    const signupForm = document.getElementById('signup-form');
+    const signupMessage = document.getElementById('signup-message');
+
+    signupForm.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      const data = new FormData(signupForm);
+      try {
+        const response = await fetch('https://formspree.io/f/mgojpzjk', {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+        if (response.ok) {
+          signupForm.reset();
+          signupMessage.textContent = "Thanks — you're signed up!";
+          signupMessage.style.display = 'block';
+        } else {
+          signupMessage.textContent = "Something went wrong. Please try again.";
+          signupMessage.style.display = 'block';
+        }
+      } catch (error) {
+        signupMessage.textContent = "Something went wrong. Please try again.";
+        signupMessage.style.display = 'block';
+      }
+    });
+  </script>
 </body>
 
 </html>
