@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Affordable therapy in Chicago and Illinois. $20 per session telehealth counseling for individuals and couples. LGBTQ+ affirming, BIPOC affirming mental health services.">
+  <meta name="keywords" content="affordable therapy Chicago, cheap therapy Illinois, low cost counseling, $20 therapy session, telehealth therapy Illinois, online therapy Chicago, LGBTQ therapy, sliding scale therapist, inexpensive therapy Chicago">
+  <title>Courtney Steck</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <!-- Standard favicon -->
+<link rel="icon" href="CS-logo-32x32.png" type="image/png" sizes="32x32">
+
+<!-- Favicon for older browsers -->
+<link rel="shortcut icon" href="CS-logo-32x32.ico" type="image/x-icon">
+
+<!-- Apple touch icons (for iPhone/iPad home screen bookmarks) -->
+<link rel="apple-touch-icon" sizes="180x180" href="CS-logo-180x180.png">
+<link rel="apple-touch-icon" sizes="152x152" href="CS-logo-152x152.png">
+<link rel="apple-touch-icon" sizes="120x120" href="CS-logo-120x120.png">
+
+<!-- Optional: Android / high-res devices -->
+<link rel="icon" type="image/png" sizes="192x192" href="CS-logo-192x192.png">
+
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Courtney Steck Therapy Services",
+    "image": "https://raw.githubusercontent.com/courtneybsteck/myservices/main/profile-photo.jpg",
+    "description": "Affordable therapy services in Chicago and Illinois. $20 per session for individuals and couples. Telehealth and in-person options available.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1925 N Clybourn Ave",
+      "addressLocality": "Chicago",
+      "addressRegion": "IL",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "41.9176",
+      "longitude": "-87.6544"
+    },
+    "url": "https://courtneybsteck.github.io/myservices/",
+    "priceRange": "$20",
+    "areaServed": {
+      "@type": "State",
+      "name": "Illinois"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Therapy Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Individual Therapy",
+            "description": "Affordable individual counseling sessions"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Couples Therapy",
+            "description": "Affordable couples counseling sessions"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Telehealth Therapy",
+            "description": "Online therapy sessions throughout Illinois"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Raleway', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #fff3ee;
+    }
+
+    a {
+      color: #333;
+      text-decoration: underline;
+    }
+
+    a:visited {
+      color: #333;
+    }
+
+    a:hover {
+      color: #897c78;
+    }
+
+    /* Custom link colors for specific inline links */
+    a.custom-link {
+      color: #197b84;
+    }
+
+    a.custom-link:visited {
+      color: #197b84;
+    }
+
+    a.custom-link:hover {
+      color: #749c9f;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: 'Crimson Text', serif;
+    }
+
+    .tag-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+      justify-content: center;
+    }
+
+    /* boxes in columns */
+    .tag {
+      display: inline-block;
+      padding: 0.4rem 0.8rem;
+      background-color: #fdfaf7;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    /* Header/Navigation */
+    header {
+      background-color: #e5cfc8;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid #e5e5e5;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'Crimson Text', serif;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #3c5759;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-size: 0.95rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #666;
+    }
+
+    /* Hero Section with Photo */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .hero-image {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 8px;
+    }
+
+    .hero-text h1 {
+      font-size: 2.5rem;
+      font-weight: 300;
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+      color: #3c5759;
+    }
+
+    .hero-text .subtitle {
+      font-size: 1.1rem;
+      color: #666;
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-text p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+
+    /* Services Section */
+    .services-section {
+      background-color: #f5eee6;
+      padding: 5rem 2rem;
+    }
+
+    .services-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .services-section h2 {
+      font-size: 2rem;
+      font-weight: 300;
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #3c5759;
+    }
+
+    .services-intro {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #666;
+      margin-bottom: 3rem;
+    }
+
+    /*centering the iframe map in grid*/
+    .map-wrapper {
+      width: 100%; /* Wrapper takes full column width */
+      text-align: center; /* Helps with inline elements */
+      margin-top: 2rem;
+}
+    
+    .map-wrapper iframe{
+      display: block; /* Necessary for margin auto to work */
+      margin: 0 auto; /* Centers the iframe horizontally */
+      max-width: 90%; /* Keeps it from touching the edges */
+      
+    }
+    
+    .cta-button {
+      display: inline-block;
+      padding: 0.5rem 1.0rem;
+      width: 300px;
+      background-color: #749c9f;
+      color: white !important;
+      text-decoration: none;
+      border-radius: 4px;
+      border: none;
+      font-size: 0.95rem;
+      transition: background-color 0.3s;
+      text-align: center;
+    }
+
+    .cta-button:hover {
+      background-color: #8fb1b3;
+      color: white !important;
+    }
+
+    .cta-button:visited {
+      color: white !important;
+    }
+    
+    .send-button {
+      margin-left: 0;
+      display: block;
+      padding: 0.5rem 1.0rem;
+      width: 100px;
+      background-color: #749c9f;
+      color: white !important;
+      text-decoration: none;
+      border-radius: 4px;
+      border: none;
+      font-size: 0.95rem;
+      transition: background-color 0.3s;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .send-button:hover {
+      background-color: #8fb1b3;
+      color: white !important;
+    }
+
+    .send-button:visited {
+      color: white !important;
+    }
+
+    /* About Section */
+    .about-section {
+      max-width: 900px;
+      margin: 5rem auto;
+      padding: 0 2rem;
+    }
+
+    .about-section h2 {
+      font-size: 2rem;
+      font-weight: 300;
+      margin-bottom: 2rem;
+      color: #333;
+    }
+
+    .about-section p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #555;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Details Grid */
+    .details-section {
+      background-color: #f9f9f9;
+      padding: 5rem 2rem;
+    }
+
+    .details-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .details-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.0rem;
+      margin: 2.0rem auto 0 auto;
+      max-width: 1200px;
+      
+    }
+
+    .detail-box h3 {
+      font-size: 1.3rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+      color: #197b84;
+      text-align: center;
+    }
+
+    .detail-box ul {
+      list-style: none;
+      text-align: center;
+    }
+
+    .detail-box li {
+      padding: 0.5rem 0;
+      color: #555;
+      font-size: 0.95rem;
+      text-align: center;
+    }
+
+    .detail-box li::before {
+      content: "• ";
+      color: #999;
+      margin-right: 0.5rem;
+    }
+
+    .price-feature {
+      font-size: 1.8rem;
+      color: #333;
+      font-weight: 300;
+      margin: 2rem 0;
+      text-align: center;
+    }
+
+    .detail-note {
+      font-size: 80%;
+      line-height: 1.3;
+      display: block;
+      font-style: italic;
+      color: #666;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      max-width: 900px;
+      margin: 5rem auto;
+      padding: 0 2rem;
+      text-align: center;
+    }
+
+    .contact-section h2 {
+      font-size: 2rem;
+      font-weight: 300;
+      margin-bottom: 2rem;
+      color: #333;
+    }
+
+    .contact-section p {
+      margin-bottom: 1rem;
+    }
+
+/* Contact Form styling */
+.contact-form {
+  max-width: 600px;
+  margin: 3rem auto;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  color: #333;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #749c9f;
+}
+
+/* Intern info section */
+.intern-info {
+  max-width: 1200px;
+  margin: 2rem auto 4rem auto;
+  padding: 0 2rem;
+}
+
+.intern-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.intern-content img {
+  width: 385px;
+  height: 82px;
+  flex-shrink: 0;
+}
+
+.intern-content p {
+  margin: 0;
+  font-size: 0.85em;
+  line-height: 1.6;
+  color: #555;
+}
+    
+    
+    /* Footer */
+    footer {
+      background-color: #e5cfc8;
+      color: #666;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.85rem;
+      margin-top: 5rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .hero-image {
+        order: -1;
+        margin: 0 auto;
+      }
+
+      .hero-text h1 {
+        font-size: 2rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+      }
+
+      .header-content {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    .details-grid {
+    grid-template-columns: 1fr;  /* Stack columns vertically on mobile */
+    gap: 2rem;
+  }
+
+  .cta-button {
+    width: 100%;  /* Full width buttons on mobile */
+    max-width: 300px;
+  }
+
+  .send-button {
+    width: 100%;
+    max-width: 150px;
+  }
+
+  .logo {
+    font-size: 1.5rem;  /* Smaller logo on mobile */
+  }
+
+  .tag {
+    font-size: 0.85rem;  /* Slightly smaller tags */
+  }
+
+  .intern-content {
+    flex-direction: column;
+  }
+
+  .intern-content img {
+    width: 100%;
+    height: auto;
+    max-width: 385px;
+  }
+}
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo"> Courtney Steck</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Session Details</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <img src="https://raw.githubusercontent.com/courtneybsteck/myservices/main/profile-photo.jpg" class="hero-image" alt="Courtney Steck affordable therapist in Chicago Illinois">
+
+      <div class="hero-text">
+        <h1>Courtney Steck <span style="font-size: 1.2rem; font-weight: 300;">| she/her</span></h1>
+        <div class="subtitle">Pre-Licensed Professional Counselor</div>
+
+        <p>Life's challenges can feel overwhelming and isolating. You might be struggling emotionally, navigating a difficult transition, or feeling stuck in patterns that no longer serve you. Perhaps the echoes of past experiences or traumas are shaping how you connect with others. You're ready for something to change, even if the next step feels uncertain. This is where our work together begins.</p>
+        <p>I am committed to creating a warm, supportive space where you can show up as your complete, authentic self. My goal is to truly understand your story in all its depth and complexity. Together, we'll carve out a new path toward meaningful, lasting change.</p>
+
+        <div class="button-center" style="margin-top: 2.0rem; margin-bottom: 1rem;">
+          <a href="https://calendly.com/courtneybsteck/15-minute-consultation-call" target="_blank" class="cta-button">Schedule a Free Consultation Call</a>
+        </div>
+        <div class="button-center">
+          <a href="#contact" class="cta-button"> Send Me a Message</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="intern-info">
+      <div class="intern-content">
+        <img src="https://raw.githubusercontent.com/courtneybsteck/myservices/main/PT_cert.png" alt="Psychology Today Certification">
+        <p><i>Courtney is a clinical intern at <a href="https://www.chitherapywell.com/" target="_blank" class="custom-link">Chicago Therapy and Wellness</a>. She is pursuing a master's degree in clinical mental health counseling (anticipated June 2026) and works under the supervision of a fully licensed clinician.</i></p>
+      </div>
+    </section>
+
+    <section class="services-section" id="services">
+      <div class="services-content">
+      <h2>Session Details</h2>
+
+        <div class="details-grid">
+          <div class="detail-box">
+           <h3><b>Clinical Focus</b></h3>
+            <div class="tag-container">
+              <span class="tag">Individuals</span>
+              <span class="tag">Couples</span>
+            </div>
+            <div class="tag-container">
+              <span class="tag">Adults</span>
+              <span class="tag">Teens</span>
+              <span class="tag">Elders (65+)</span>
+            </div><br>
+            <span class="detail-note">*At this time, therapy services are only available to Illinois residents in accordance with state licensure requirements.</span>
+          </div>
+
+   <div class="detail-box">
+  <h3><b>Session Availability</b></h3>
+  
+  <div class="tag-container">
+    <span class="tag">
+      <img src="https://raw.githubusercontent.com/courtneybsteck/myservices/main/display_monitor-32x32.png" style="width: 16px; height: 16px; vertical-align: middle;" alt="Monitor icon"> &nbsp;Telehealth (Online)
+    </span>
+  </div>
+
+  <div class="tag-container">
+    <span class="tag">
+      <img src="https://raw.githubusercontent.com/courtneybsteck/myservices/main/map-point-5986808-3C5759.png" style="width: 16px; height: 16px; vertical-align: middle;" alt="Location icon"> &nbsp;In-person | 1925 N Clybourn
+    </span>
+  </div>
+
+  <a href="https://maps.google.com/?q=1925+N+Clybourn+Chicago" target="_blank" style="text-decoration: none;">
+    <div class="map-wrapper">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.5!2d-87.6544!3d41.9176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd2e0c0a0c0c0%3A0x0!2s1925%20N%20Clybourn%20Ave!5e0!3m2!1sen!2sus!4v1234567890&style=feature:all|element:geometry|saturation:-100|lightness:40" 
+        width="90%" 
+        height="200" 
+        style="border:0; border-radius: 8px; filter: grayscale(100%);" 
+        allowfullscreen="" 
+        loading="lazy"
+        title="Office location map">
+      </iframe>
+    </div>
+  </a>
+</div>
+ 
+
+          <div class="detail-box">
+           <h3><b>Advocacy Commitments</b></h3>
+            <div class="tag-container">
+              <span class="tag">Queer affirming</span>
+              </div>
+              <div class="tag-container">
+              <span class="tag">BIPOC & immigrant affirming</span>
+            </div>
+            <div class="tag-container">
+              <span class="tag">Anti-oppressive practice</span>
+                               </div>
+               <div class="tag-container">
+               <span class="tag">Racial justice allied</span>
+               </div>
+            </div>
+        
+
+          <div class="detail-box">
+          <h3><b>Cost & Payment</b></h3>
+            <div class="tag-container">
+              <span class="tag">Self-Pay: $20 per session<br>Credit Cards Accepted </span>
+              </div>
+              <div class="tag-container">
+              <span class="tag">Accepted Insurance:<br> BlueCross BlueShield<br>Cigna</span>
+                 </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <h2>Contact</h2>
+      <p>Submit the form below or <a href="https://calendly.com/courtneybsteck/15-minute-consultation-call" target="_blank" class="custom-link">schedule a free 15-minute consultation call</a>.</p>
+
+<div class="form-group">    
+<form
+  action="https://formspree.io/f/xzdzleky"
+  method="POST"
+>
+   <label>
+    Name:
+    <input type="text" name="name">
+  </label>
+  <label>
+    Email address:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Message:
+    <textarea name="message" rows="8"></textarea>
+  </label>
+  <button type="submit" class="send-button">Send</button>
+</form>
+</div>     
+
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Courtney Steck. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
