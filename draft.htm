@@ -1,383 +1,128 @@
-<!-- IMPORTANT - before going live, search for and remove scripts/code prefaced with "to be removed" -->
+CodePen Home
+Draft for Leap Review
+
+courtneybsteck
 
 
-<!DOCTYPE html>
-<html lang="en">
+Search Files, Settings & more...
+Ctrl
+K
+Love
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <!-- to be removed - meta name tag with 'robots' below that stops web crawlers from indexing the page -->
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="description" content="Affordable therapy in Chicago and Illinois. $20 per session telehealth counseling for individuals and couples. LGBTQ+ affirming, BIPOC affirming mental health services.">
-  <title>Courtney Steck</title>
+Save
 
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+Controls
 
-  <!-- Standard favicon -->
-<link rel="icon" href="CS-logo-32x32.png" type="image/png" sizes="32x32">
+User Menu
 
-<!-- Favicon for older browsers -->
-<link rel="shortcut icon" href="CS-logo-32x32.ico" type="image/x-icon">
 
-<!-- Apple touch icons (for iPhone/iPad home screen bookmarks) -->
-<link rel="apple-touch-icon" sizes="180x180" href="CS-logo-180x180.png">
-<link rel="apple-touch-icon" sizes="152x152" href="CS-logo-152x152.png">
-<link rel="apple-touch-icon" sizes="120x120" href="CS-logo-120x120.png">
+Search Files
+Search files...
 
-<!-- Optional: Android / high-res devices -->
-<link rel="icon" type="image/png" sizes="192x192" href="CS-logo-192x192.png">
+Over Limits
+3/3 Files
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
 
-    body {
-      font-family: 'Raleway', sans-serif;
-      line-height: 1.6;
-      color: #333;
-      background-color: #fff3ee;
-    }
+Add Blocks
 
-    a {
-      color: #333;
-      text-decoration: underline;
-    }
 
-    a:visited {
-      color: #333;
-    }
+intern-content img
 
-    a:hover {
-      color: #897c78;
-    }
 
-    a.custom-link {
-      color: #197b84;
-    }
 
-    a.custom-link:visited {
-      color: #197b84;
-    }
 
-    a.custom-link:hover {
-      color: #749c9f;
-    }
 
-    h1,
-    h2,
-    h3 {
-      font-family: 'Crimson Text', serif;
-    }
 
-    .tag-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-top: 1rem;
-      justify-content: center;
-    }
 
-    .tag {
-      display: inline-block;
-      padding: 0.4rem 0.8rem;
-      background-color: #fdfaf7;
-      border: 1px solid #ddd;
-      border-radius: 20px;
-      font-size: 0.9rem;
-      color: #555;
-    }
 
-    header {
-      background-color: #e5cfc8;
-      padding: 1.5rem 0;
-      border-bottom: 1px solid #e5e5e5;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-
-    .header-content {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      font-family: 'Crimson Text', serif;
-      font-size: 1.8rem;
-      font-weight: 600;
-      color: #3c5759;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 2rem;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #333;
-      font-size: 0.95rem;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #666;
-    }
-
-    .hero {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      max-width: 1200px;
-      margin: 4rem auto;
-      padding: 0 2rem;
-      gap: 4rem;
-      align-items: center;
-    }
-
-    .hero-image {
-      width: 100%;
-      max-width: 500px;
-      border-radius: 8px;
-    }
-
-    .hero-text h1 {
-      font-size: 2.5rem;
-      font-weight: 300;
-      margin: 0;
-      padding: 0;
-      line-height: 1;
-      color: #3c5759;
-    }
-
-    .hero-text .subtitle {
-      font-size: 1.1rem;
-      color: #666;
-      margin-top: 0;
-      margin-bottom: 1.5rem;
-    }
-
-    .hero-text p {
-      font-size: 1rem;
-      line-height: 1.8;
-      color: #555;
-      margin-bottom: 1rem;
-    }
-
-    .services-section {
-      background-color: #f5eee6;
-      padding: 5rem 2rem;
-    }
-
-    .services-content {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .services-section h2 {
-      font-size: 2rem;
-      font-weight: 300;
-      text-align: center;
-      margin-bottom: 1rem;
-      color: #3c5759;
-    }
-
-    .services-intro {
-      text-align: center;
-      font-size: 1.1rem;
-      color: #666;
-      margin-bottom: 3rem;
-    }
-
-    .map-wrapper {
-      width: 100%;
-      text-align: center;
-      margin-top: 2rem;
-    }
-
-    .map-wrapper iframe {
-      display: block;
-      margin: 0 auto;
-      max-width: 90%;
-    }
-
-    .cta-button {
-      display: inline-block;
-      padding: 0.5rem 1.0rem;
-      width: 300px;
-      background-color: #749c9f;
-      color: white !important;
-      text-decoration: none;
-      border-radius: 4px;
-      border: none;
-      font-size: 0.95rem;
-      transition: background-color 0.3s;
-      text-align: center;
-    }
-
-    .cta-button:hover {
-      background-color: #8fb1b3;
-      color: white !important;
-    }
-
-    .cta-button:visited {
-      color: white !important;
-    }
-
-    .send-button {
-      margin-left: 0;
-      display: block;
-      padding: 0.5rem 1.0rem;
-      width: 100px;
-      background-color: #749c9f;
-      color: white !important;
-      text-decoration: none;
-      border-radius: 4px;
-      border: none;
-      font-size: 0.95rem;
-      transition: background-color 0.3s;
-      text-align: center;
-      cursor: pointer;
-    }
-
-    .send-button:hover {
-      background-color: #8fb1b3;
-      color: white !important;
-    }
-
-    .send-button:visited {
-      color: white !important;
-    }
-
-    .about-section {
-      max-width: 900px;
-      margin: 5rem auto;
-      padding: 0 2rem;
-    }
-
-    .about-section h2 {
-      font-size: 2rem;
-      font-weight: 300;
-      margin-bottom: 2rem;
-      color: #333;
-    }
-
-    .about-section p {
-      font-size: 1rem;
-      line-height: 1.8;
-      color: #555;
-      margin-bottom: 1.5rem;
-    }
-
-    .details-section {
-      background-color: #f9f9f9;
-      padding: 5rem 2rem;
-    }
-
-    .details-content {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .details-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1.0rem;
-      margin: 2.0rem auto 0 auto;
-      max-width: 1200px;
-    }
-
-    .detail-box h3 {
-      font-size: 1.3rem;
-      font-weight: 400;
-      margin-bottom: 1rem;
-      color: #197b84;
-      text-align: center;
-    }
-
-    .detail-box ul {
-      list-style: none;
-      text-align: center;
-    }
-
-    .detail-box li {
-      padding: 0.5rem 0;
-      color: #555;
-      font-size: 0.95rem;
-      text-align: center;
-    }
-
-    .detail-box li::before {
-      content: "• ";
-      color: #999;
-      margin-right: 0.5rem;
-    }
-
-    .price-feature {
-      font-size: 1.8rem;
-      color: #333;
-      font-weight: 300;
-      margin: 2rem 0;
-      text-align: center;
-    }
-
-    .detail-note {
-      font-size: 80%;
-      line-height: 1.3;
-      display: block;
-      font-style: italic;
-      color: #666;
-    }
-
-    .contact-section {
-      max-width: 900px;
-      margin: 5rem auto;
-      padding: 0 2rem;
-      text-align: center;
-    }
-
-    .contact-section h2 {
-      font-size: 2rem;
-      font-weight: 300;
-      margin-bottom: 2rem;
-      color: #333;
-    }
-
-    .contact-section p {
-      margin-bottom: 1rem;
-    }
-
-    .contact-form {
-      max-width: 600px;
-      margin: 3rem auto;
-      text-align: left;
-    }
-
-    .form-group {
-      margin-bottom: 1.5rem;
-    }
-
-    .form-group label {
-      display: block;
-      margin-bottom: 0.5rem;
-      text-align: left;
-      color: #333;
-      font-weight: 500;
-    }
-
-    .form-group input,
-    .form-group textarea {
-      width: 100%;
-      padding: 0.75rem;
-      border: 1px solid #ddd;
+current match. .intern-content img { on line 404.
+381
+382
+383
+384
+385
+386
+387
+388
+389
+390
+391
+392
+393
+394
+395
+396
+397
+398
+399
+400
+401
+402
+403
+404
+405
+406
+407
+408
+409
+410
+411
+412
+413
+414
+415
+416
+417
+418
+419
+420
+421
+422
+423
+424
+425
+426
+427
+428
+429
+430
+431
+432
+433
+434
+435
+436
+437
+438
+439
+440
+441
+442
+443
+444
+445
+446
+447
+448
+449
+450
+451
+452
+453
+454
+455
+456
+457
+▾
+▾
+▾
+▾
+▾
+▾
+▾
+▾
+▾
+▾
       border-radius: 4px;
       font-family: 'Raleway', sans-serif;
       font-size: 1rem;
@@ -455,272 +200,47 @@
       border-radius: 4px;
       font-family: 'Raleway', sans-serif;
       font-size: 1rem;
-    }
-
-    #password-error {
-      color: #a13d3d;
-      font-size: 0.9rem;
-      min-height: 1.2rem;
-    }
-
-    #site-content {
-      display: none;
-    }
-
-    @media (max-width: 768px) {
-      .hero {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-
-      .hero-image {
-        order: -1;
-        margin: 0 auto;
-      }
-
-      .hero-text h1 {
-        font-size: 2rem;
-      }
-
-      nav ul {
-        flex-direction: column;
-        gap: 1rem;
-        align-items: center;
-      }
-
-      .header-content {
-        flex-direction: column;
-        gap: 1rem;
-      }
-
-      .details-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-      }
-
-      .cta-button {
-        width: 100%;
-        max-width: 300px;
-      }
-
-      .send-button {
-        width: 100%;
-        max-width: 150px;
-      }
-
-      .logo {
-        font-size: 1.5rem;
-      }
-
-      .tag {
-        font-size: 0.85rem;
-      }
-
-      .intern-content {
-        flex-direction: column;
-      }
-
-      .intern-content img {
-        width: 100%;
-        height: auto;
-        max-width: 385px;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-  <!-- Password gate: this is the only thing visible until the correct password is entered -->
-  <div id="password-gate">
-    <h1>This page is password protected</h1>
-    <form id="password-form">
-      <input type="password" id="password-input" placeholder="Enter password" autocomplete="off">
-      <button type="submit" class="send-button" style="width:100%; max-width:none;">Enter</button>
-      <div id="password-error"></div>
-    </form>
-  </div>
-
-  <!-- Real content: hidden in the DOM (not rendered) until password check passes -->
-  <div id="site-content">
-    <header>
-      <div class="header-content">
-        <div class="logo"> Courtney Steck</div>
-        <nav>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Session Details</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <main>
-      <section class="hero" id="home">
-        <img src="https://raw.githubusercontent.com/courtneybsteck/myservices/main/profile-photo.jpg" class="hero-image" alt="Courtney Steck affordable therapist in Chicago Illinois">
-
-        <div class="hero-text">
-          <h1>Courtney Steck <span style="font-size: 1.2rem; font-weight: 300;">| she/her</span></h1>
-          <div class="subtitle">Licensed Professional Counselor</div>
-
-          <p>Life's challenges can feel overwhelming and isolating. You might be struggling emotionally, navigating a difficult transition, or feeling stuck in patterns that no longer serve you. Perhaps the echoes of past experiences or traumas are shaping how you connect with others. You're ready for something to change, even if the next step feels uncertain. This is where our work together begins.</p>
-          <p>I am committed to creating a warm, supportive space where you can show up as your complete, authentic self. My goal is to truly understand your story in all its depth and complexity. Together, we'll carve out a new path toward meaningful, lasting change.</p>
-
-          <div class="button-center" style="margin-top: 2.0rem; margin-bottom: 1rem;">
-            <a href="https://calendly.com/courtneybsteck/15-minute-consultation-call" target="_blank" class="cta-button">Schedule a Free Consultation Call</a>
-          </div>
-          <div class="button-center">
-            <a href="#contact" class="cta-button"> Send Me a Message</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="intern-info">
-        <div class="intern-content">
-          <img src="https://raw.githubusercontent.com/courtneybsteck/myservices/main/PT_cert - dummy w reminder.png" alt="Psychology Today Certification">
-          <p><i>Courtney is a clinical intern at <a href="https://www.chitherapywell.com/" target="_blank" class="custom-link">Chicago Therapy and Wellness</a>. She is pursuing a master's degree in clinical mental health counseling (anticipated June 2026) and works under the supervision of a fully licensed clinician.</i></p>
-        </div>
-      </section>
-
-      <section class="services-section" id="services">
-        <div class="services-content">
-        <h2>Session Details</h2>
-
-          <div class="details-grid">
-            <div class="detail-box">
-             <h3><b>Clinical Focus</b></h3>
-              <div class="tag-container">
-                <span class="tag">Individuals</span>
-                <span class="tag">Couples</span>
-              </div>
-              <div class="tag-container">
-                <span class="tag">Adults</span>
-                <span class="tag">Teens</span>
-                <span class="tag">Elders (65+)</span>
-              </div><br>
-              <span class="detail-note">*At this time, therapy services are only available to Illinois residents in accordance with state licensure requirements.</span>
-            </div>
-
-     <div class="detail-box">
-    <h3><b>Session Availability</b></h3>
-
-    <div class="tag-container">
-      <span class="tag">
-        <img src="https://raw.githubusercontent.com/courtneybsteck/myservices/main/display_monitor-32x32.png" style="width: 16px; height: 16px; vertical-align: middle;" alt="Monitor icon"> &nbsp;Telehealth (Online)
-      </span>
-    </div>
-
-    <div class="tag-container">
-      <span class="tag">
-        <img src="https://raw.githubusercontent.com/courtneybsteck/myservices/main/map-point-5986808-3C5759.png" style="width: 16px; height: 16px; vertical-align: middle;" alt="Location icon"> &nbsp;In-person | 1925 N Clybourn
-      </span>
-    </div>
-
-    <a href="https://maps.google.com/?q=1925+N+Clybourn+Chicago" target="_blank" style="text-decoration: none;">
-      <div class="map-wrapper">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.5!2d-87.6544!3d41.9176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd2e0c0a0c0c0%3A0x0!2s1925%20N%20Clybourn%20Ave!5e0!3m2!1sen!2sus!4v1234567890&style=feature:all|element:geometry|saturation:-100|lightness:40"
-          width="90%"
-          height="200"
-          style="border:0; border-radius: 8px; filter: grayscale(100%);"
-          allowfullscreen=""
-          loading="lazy"
-          title="Office location map">
-        </iframe>
-      </div>
-    </a>
-  </div>
 
 
-            <div class="detail-box">
-             <h3><b>Advocacy Commitments</b></h3>
-              <div class="tag-container">
-                <span class="tag">Queer affirming</span>
-                </div>
-                <div class="tag-container">
-                <span class="tag">BIPOC & immigrant affirming</span>
-              </div>
-              <div class="tag-container">
-                <span class="tag">Anti-oppressive practice</span>
-                                 </div>
-                 <div class="tag-container">
-                 <span class="tag">Racial justice allied</span>
-                 </div>
-              </div>
+1
+2
+3
+4
+5
+6
+▾
+html {
+  height: 100%;
+  background: 50% 50% no-repeat
+    url('data:image/svg+xml,<svg viewBox="-20 -5 60 40" width="140" xmlns="http://www.w3.org/2000/svg" opacity="0.2"><path d="M1 8l11-7 11 7v8l-11 7-11-7zm0 0l11 8 11-8m0 8L12 8 1 16M12 1v7m0 8v7" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"/><text x="-12" y="32" font-size="5" font-family="monospace" fill="currentColor">Built on CodePen</text></svg>');
+}
 
 
-            <div class="detail-box">
-            <h3><b>Cost & Payment</b></h3>
-              <div class="tag-container">
-                <span class="tag">Self-Pay: $20 per session<br>Credit Cards Accepted </span>
-                </div>
-                <div class="tag-container">
-                <span class="tag">Accepted Insurance:<br> BlueCross BlueShield<br>Cigna</span>
-                   </div>
-              </div>
-            </div>
 
-          </div>
-        </div>
-      </section>
+1
 
-      <section class="contact-section" id="contact">
-        <h2>Contact</h2>
-        <p>Submit the form below or <a href="https://calendly.com/courtneybsteck/15-minute-consultation-call" target="_blank" class="custom-link">schedule a free 15-minute consultation call</a>.</p>
 
-  <div class="form-group">
-  <form
-    action="https://formspree.io/f/xzdzleky"
-    method="POST"
-  >
-     <label>
-      Name:
-      <input type="text" name="name">
-    </label>
-    <label>
-      Email address:
-      <input type="email" name="email">
-    </label>
-    <label>
-      Message:
-      <textarea name="message" rows="8"></textarea>
-    </label>
-    <button type="submit" class="send-button">Send</button>
-  </form>
-  </div>
 
-      </section>
-    </main>
 
-    <footer>
-      <p>© 2026 Courtney Steck. All rights reserved.</p>
-    </footer>
-  </div>
+PreviewURL:
+/
 
-  <!-- to be removed - password script below -->
-  <script>
-    // Simple, non-secure client-side gate.
-    // NOTE: anyone can view-source this file and read PASSWORD directly.
-    // This only deters casual visitors; it is not real security.
-    var PASSWORD = "halloween3";
 
-    document.getElementById("password-form").addEventListener("submit", function (e) {
-      e.preventDefault();
-      var entered = document.getElementById("password-input").value;
-      var errorEl = document.getElementById("password-error");
 
-      if (entered === PASSWORD) {
-        document.getElementById("password-gate").style.display = "none";
-        document.getElementById("site-content").style.display = "block";
-      } else {
-        errorEl.textContent = "Incorrect password - try again.";
-        document.getElementById("password-input").value = "";
-        document.getElementById("password-input").focus();
-      }
-    });
-  </script>
+Preview Controls Menu
 
-</body>
+1833 x 86
 
-</html>
+Google Cloud
+Cloud SQL Free Trial
+
+
+
+Build Output
+Public
+
+Want a tour?
+Last saved
+just now
+Pen saved.
+
