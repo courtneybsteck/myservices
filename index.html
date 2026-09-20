@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
   <!-- <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Affordable therapy in Chicago and Illinois. $20 per session telehealth counseling for individuals and couples. LGBTQ+ affirming, BIPOC affirming mental health services.">
-  <meta name="keywords" content="affordable therapy Chicago, cheap therapy Illinois, low cost counseling, $20 therapy session, telehealth therapy Illinois, online therapy Chicago, LGBTQ therapy, sliding scale therapist, inexpensive therapy Chicago"> -->
+  <meta name="description" content="Therapy in Chicago and Illinois. In-person and telehealth counseling for individuals and couples. LGBTQ+ affirming, BIPOC affirming mental health services.">
+  <meta name="keywords" content=" therapy Chicago,  therapy Illinois, counseling, telehealth therapy Illinois, online therapy Chicago, LGBTQ therapy, sliding scale therapist"> -->
   
   <title>Courtney Steck</title>
 
@@ -137,12 +138,12 @@
     /* Hero Section with Photo */
     .hero {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: .8fr 1fr;
       max-width: 1200px;
       margin: 4rem auto;
       padding: 0 2rem;
       gap: 4rem;
-      align-items: center;
+      align-items: start;
     }
 
     .hero-image {
@@ -164,9 +165,17 @@
       font-size: 1.1rem;
       color: #666;
       margin-top: 0;
-      margin-bottom: 1.5rem;
+      margin-bottom: .5rem;
     }
 
+.hero-text .license-info {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #888;
+  margin-top: -0.5rem;
+  margin-bottom: 2rem;
+}
+    
     .hero-text p {
       font-size: 1rem;
       line-height: 1.8;
@@ -536,15 +545,16 @@
 
       <div class="hero-text">
         <h1>Courtney Steck <span style="font-size: 1.2rem; font-weight: 300;">| she/her</span></h1>
-        <div class="subtitle">Pre-Licensed Professional Counselor</div>
+        <div class="subtitle">Licensed Professional Counselor</div>
+        <div class="license-info">Illinois License no. 178.033369</div>
+
 
         <p>Life's challenges can feel overwhelming and isolating. You might be struggling emotionally, navigating a difficult transition, or feeling stuck in patterns that no longer serve you. Perhaps the echoes of past experiences or traumas are shaping how you connect with others. You're ready for something to change, even if the next step feels uncertain. This is where our work together begins.</p>
         <p>I am committed to creating a warm, supportive space where you can show up as your complete, authentic self. My goal is to truly understand your story in all its depth and complexity. Together, we'll carve out a new path toward meaningful, lasting change.</p>
 
         <div class="practice-updates">
           <h3>Practice Updates</h3>
-          <p>I am currently completing the Illinois licensure process.<nbsp>
-          Sign up to receive an email when I announce my next practice location and begin accepting new clients.</p>
+          <p>I will be soon be accepting new clients for both in-person and telehealth sessions. Sign up to receive an email when my scheduling calendar opens. I look forward to connecting with you!</p>
           <!-- embedded form -->
           <form class="signup-form" id="signup-form">
             <div class="signup-form-row">
@@ -582,7 +592,7 @@
         });
         if (response.ok) {
           signupForm.reset();
-          signupMessage.textContent = "💌 Thank you — you are now signed up!";
+          signupMessage.textContent = "Thank you — you are now signed up!";
           signupMessage.style.display = 'block';
         } else {
           signupMessage.textContent = "Something went wrong. Please try again.";
