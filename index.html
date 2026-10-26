@@ -240,18 +240,8 @@
       font-size: 1.1rem;
       color: #666;
       margin-top: 0;
-      margin-bottom: .15rem;
+      margin-bottom: 0.15rem;
     }
-
-    .hero-text .license-info {
-      font-size: .85rem;
-      font-style: italic;
-      color: #6b6b6b;
-      line-height: 1.5;
-      margin-top: 0rem;
-      margin-bottom: 2rem;
-    }
-
 
     .hero-text p {
       font-size: 1rem;
@@ -262,13 +252,21 @@
 
     .hero-text .CTAheader {
       font-family: 'Crimson Text', serif;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       color: #197B84;
       margin-top: 2rem;
       margin-bottom: .25rem;
     }
 
-  
+    .hero-text .license-info {
+      font-size: .85rem;
+      font-style: italic;
+      color: #6b6b6b;
+      line-height: 1.5;
+      margin-top: 0;
+      margin-bottom: 2rem;
+    }
+
     /* Services Section */
     .services-section {
       background-color: #F6EAE4;
@@ -314,6 +312,13 @@
       font-size: 0.9rem;
     }
 
+    .location-note {
+      text-align: center;
+      font-size: 0.85rem;
+      margin-top: -0.9rem;
+      margin-bottom: 0;
+    }
+
     .cta-button {
       display: inline-block;
       padding: .75rem 1.25rem;
@@ -325,7 +330,7 @@
       border: none;
       font-size: 1rem;
       font-weight: 600;
-      box-shadow: 4px 4px 0 #5a8185, 6px 6px 10px rgba(0, 0, 0, 0.15);
+      box-shadow: 2px 2px 0 #5a8185, 3px 3px 6px rgba(0, 0, 0, 0.15);
       transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
       text-align: center;
     }
@@ -333,39 +338,21 @@
     .cta-button:hover {
       background-color: #8fb1b3;
       color: white !important;
-      transform: translate(-2px, -2px);
-      box-shadow: 6px 6px 0 #5a8185, 9px 9px 14px rgba(0, 0, 0, 0.18);
+      transform: translate(-1px, -1px);
+      box-shadow: 3px 3px 0 #5a8185, 5px 5px 8px rgba(0, 0, 0, 0.18);
     }
 
     .cta-button:active {
-    transform: translate(3px, 3px);
-    box-shadow: 1px 1px 0 #5a8185;
+    transform: translate(2px, 2px);
+    box-shadow: 0px 0px 0 #5a8185;
     }
 
     .send-button {
-      margin-left: 0;
-      display: block;
-      padding: 0.5rem 1.0rem;
-      width: 100px;
-      background-color: #749c9f;
-      color: white !important;
-      text-decoration: none;
-      border-radius: 4px;
-      border: none;
-      font-size: 0.95rem;
-      transition: background-color 0.3s;
-      text-align: center;
-      cursor: pointer;
-    }
-
-    .send-button:hover {
-      background-color: #8fb1b3;
-      color: white !important;
-    }
-
-    .send-button:visited {
-      color: white !important;
-    }
+     display: block;
+    width: 120px;
+    font-family: inherit;
+    cursor: pointer;
+}
 
     /* About Section */
     .about-section {
@@ -405,6 +392,7 @@
       gap: 1.0rem;
       margin: 2.0rem auto 0 auto;
       max-width: 1200px;
+      align-items: start;
     }
 
     .detail-box h3 {
@@ -639,7 +627,7 @@
         <p>I am committed to creating a warm, supportive space where you can show up as your complete, authentic self. My goal is to truly understand your story in all its depth and complexity. Together, we'll carve out a new path toward meaningful, lasting change.</p>
 
         <div class="CTAheader"><b>Ready to Connect?</b></div>
-        <p>I'm accepting new clients for both in-person and telehealth sessions at <a href="https://www.leaptherapychicago.com/" target="_blank" class="leap-link">Leap Therapy Chicago</a>, located at 1770 West Berteau Avenue in Chicago.</p>
+        <p>I'm accepting new clients for both in-person and telehealth sessions at <a href="https://www.leaptherapychicago.com/" target="_blank" class="leap-link">Leap Therapy Chicago</a>, located at 1770 West Berteau Avenue in the Ravenswood neighborhood of Chicago.</p>
         <p>I offer a <b>free 15-minute consultation</b> as a chance for you to share a bit about what you're looking for in therapy and get a sense of my approach. From there, you can decide if working together would feel like a good fit.</p>
         <p>I look forward to connecting with you!</p>
 
@@ -673,11 +661,12 @@
               <span class="tag">Adults</span>
               <span class="tag">Teens</span>
             </div><br>
-            <span class="detail-note">*At this time, therapy services are only available to Illinois residents in accordance with state licensure requirements.</span>
+            <span class="detail-note">*Services are only available to Illinois residents in accordance with state licensure requirements.</span>
           </div>
 
           <div class="detail-box">
             <h3><b>Session Availability</b></h3>
+            <p class="location-note"><a href="https://www.leaptherapychicago.com/" target="_blank" class="leap-link">Leap Therapy Chicago</a></p>
 
             <div class="tag-container">
               <span class="tag">
@@ -746,18 +735,18 @@
           method="POST"
         >
           <label>
-            Name:
+            Name
             <input type="text" name="name">
           </label>
           <label>
-            Email address:
+            Email
             <input type="email" name="email" required>
           </label>
           <label>
-            Message:
+           Message (Please avoid sharing sensitive or confidential information through this form)
             <textarea name="message" rows="8" required></textarea>
           </label>
-          <button type="submit" class="send-button">Send</button>
+          <button type="submit" class="cta-button send-button">Send</button>
         </form>
       </div>
     </section>
@@ -769,3 +758,5 @@
 </body>
 
 </html>
+
+
